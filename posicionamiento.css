@@ -1,0 +1,31 @@
+/* a=0 b=0 c=1 -> specificity =   1 */
+body {
+    display: grid;
+    grid-template-areas: 
+        "title title"
+        "header header"
+        "content content"
+        "footer footer";
+}
+
+/* a=0 b=0 c=1 -> specificity =   1 */
+h1 {
+    grid-area: title;
+}
+
+/* a=0 b=0 c=1 -> specificity =   1 */
+header {
+    grid-area: header;
+}
+
+/* a=0 b=0 c=1 -> specificity =   1 */
+section {
+    grid-area: content;
+}
+
+//* a=0 b=0 c=1 -> specificity =   1 */
+footer {
+    grid-area: footer;
+}
+
+

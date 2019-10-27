@@ -1,13 +1,98 @@
+/* a=0 b=0 c=1 -> specificity =   1 */
 body {
-      font: 400 15px Tahoma, sans-serif;
-      line-height: 1.8;
-      color: black;
-      background-color: #f6f6f6;
-  }
+    font-family: monospace;
+    background-color: bisque;
+    /*background-color: floralwhite;*/
+    margin: 2em;
+}
+
+/* a=0 b=0 c=1 -> specificity =   1 */
+header {
+    padding-bottom: 1em;
+    padding-left: 1em;
+    margin-bottom: 2em;
+    border-style: ridge;
+    border-color: red;
+    background-color: floralwhite;
+}
+
+/* a=0 b=0 c=1 -> specificity =   1 */
+nav {
+    font-size: 1.2em;
+}
+
+/* a=0 b=1 c=1 -> specificity =   11 */
+a:visited {
+    color: darkblue;
+}
+
+/* a=0 b=0 c=1 -> specificity =   1 */
 h1 {
-      background-color:#FF5733; 
-      color: #fff;
-      text-transform: uppercase;
-      padding: 100px 25px;
-      text-align: center;     
-  }
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 6em;
+    padding: 0.5em 0.25em;
+    border-radius: 2em;
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+    background-color: burlywood;
+}
+
+/* a=0 b=0 c=1 -> specificity =   1 */
+h2, h3 {
+    text-decoration: underline;
+}
+
+/* a=0 b=0 c=1 -> specificity =   1 */
+h2 {
+    font-size: 2em;
+}
+
+/* a=0 b=0 c=1 -> specificity =   1 */
+h3 {
+    font-size: 1.7em;
+}
+
+/* a=0 b=1 c=2 -> specificity =   12 */
+section p::first-letter {
+    font-family: serif;
+}
+
+/* a=0 b=0 c=1 -> specificity =   1 */
+p, blockquote, table, ul {
+    font-size: 1.2em;
+}
+
+/* a=0 b=0 c=1 -> specificity =   1 */
+blockquote {
+    font-style: italic;
+}
+
+/* a=0 b=0 c=1 -> specificity =   1 */
+table {
+    border-style: dashed;
+    border-color: darkgray;
+}
+
+/* a=0 b=0 c=1 -> specificity =   1 */
+table th {
+    font-weight: bold;
+}
+
+/* a=0 b=0 c=1 -> specificity =   1 */
+ul {
+    list-style-type: circle;
+}
+
+/* a=0 b=0 c=1 -> specificity =   1 */
+caption, figcaption {
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+/* a=0 b=0 c=1 -> specificity =   1 */
+img, video {
+    border-radius: 2em;
+}
+
+
